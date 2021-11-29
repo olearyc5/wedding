@@ -1,0 +1,547 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+/* Sitewide*/
+
+@font-face {
+    font-family: 'Great Vibes';
+    src: url(../font/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+    font-family: Arizonia;
+    src: url(../font/Arizonia-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../font/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montez;
+    src: url(../font/Montez-Regular.ttf);
+}
+
+@font-face {
+    font-family: Josefin;
+    src: url(../font/JosefinSlab-Regular.ttf);
+}
+@font-face {
+    font-family: Oswald;
+    src: url(../font/Oswald-Regular.ttf);
+}
+
+
+
+html {
+    font-family: Raleway, Roboto,'Open Sans';
+    color: #002929;
+    /*color: #121737;*/ /*navyblue
+    /*color: #3a5dbb;*/ /*light blue*/
+}
+
+body {
+    margin: 10px 0px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active {
+    color: inherit;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+img{
+    width:100%;
+}
+
+button {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #009f9f;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+button:active {
+    color: #000
+}
+
+button:active:after {
+    background: transparent;
+}
+
+button:hover:before {
+    opacity: 1;
+}
+
+button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #009f9f;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+
+/* Header settings for the site*/
+
+.header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+.homelogo {
+    height: 100%;
+    max-height: 40px;
+    max-width:100px;
+}
+
+.myHomelogo {
+/*    float: left;
+    margin-right: 100px;*/
+/*    text-align:center;
+    width:20%;
+    float:left;*/
+    font-size:20px;
+    font-weight:700;
+    min-width:226px;
+    flex-wrap:nowrap;
+}
+
+.menu {
+    font-size: 18px;
+    margin: 15px 12%;
+    display: inline-flex;
+    justify-content:space-between;
+    width:76%;
+}
+
+/*.menu__right {
+    float: right;
+    font-size: 16px;*/
+/*    margin-left: 50px;
+    margin-right:250px;
+    display: inline-flex;*/
+/*}
+
+.menu__left {
+    float: left;
+    font-size: 16px;*/
+/*    margin-left: 250px;
+    margin-right: 50px;
+    display: inline-flex;*/
+/*}*/ 
+
+
+.menuItems {
+    padding-right: 25px;
+    padding-left:25px;
+    max-width:150px;
+    width:120px;
+    font-family: Roboto;
+}
+
+/*Container*/
+
+.container{
+    height:max-content;
+    width:100%;
+}
+
+.homePage {
+    padding-top: 450px;
+    text-align: center;
+    height: 100vh;
+    background: url(../img/IMGP2747.jpg) no-repeat center center;
+    background-size:cover;
+    max-height:650px;
+}
+
+.welcomeTitle {
+    font-size: 125px;
+    font-family: 'Great Vibes';
+    text-align: center;
+    padding-top: 150px;
+    margin: 0px;
+}
+
+.dateSettings {
+    font-size: 26px;
+    font-family: Roboto;
+    text-align: center;
+    display:inline;
+    max-width:400px;
+}
+
+.homeRSVP {
+    text-align: center;
+    height: 105vh;
+    background: url(../img/IMGP2732.jpg) no-repeat center center;
+    padding:0;
+    margin:0;
+}
+
+.RSVPbutton{
+    left:60%;
+    position:relative;
+    width:20%;
+    margin:auto;
+    margin:auto;
+}
+
+.arrow{
+    bottom:5%;
+    max-width:80px;
+    text-align:center;
+    display:inline-block;
+}
+
+.venue {
+    height: 100vh;
+    background-color: #FAECDB;
+    padding: 5%;
+    width: 90%;
+    text-align:center;
+}
+
+.venue-home {
+    display: inline-flex;
+    text-align:center;
+    width:100%;
+}
+
+.venue-img{
+    width:80%;
+    height:100%;
+    padding:0 20px;
+    max-height:900px;
+}
+
+.google-maps-home {
+    position: relative;
+    padding-bottom: 90%;
+    overflow: hidden;
+    margin-bottom: 0px;
+    border: 0;
+    width:80%;
+    padding:20px;
+}
+
+.google-maps-home iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Timeline*/
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background: url(../img/IMGP2732.jpg) no-repeat center center fixed;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.timelineContainer {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+    /* The circles on the timeline */
+.timelineContainer::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.timelineLeft {
+    left: 0;
+}
+
+/* Place the container to the right */
+.timelineRight {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.timelineLeft::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.timelineRight::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.timelineRight::after {
+    left: -16px;
+}
+
+/* The actual content */
+.timelineContent {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    font-family: Raleway,'Open Sans';
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+.timeline::after {
+    left: 31px;
+}
+
+/* Full-width containers */
+.timelineContainer {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+}
+
+/* Make sure that all arrows are pointing leftwards */
+.timelineContainer::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Make sure all circles are at the same spot */
+.timelineLeft::after, .timelineRight::after {
+    left: 15px;
+}
+
+/* Make all right containers behave like the left ones */
+.timelineRight {
+    left: 0%;
+}
+}
+
+
+/* Map Embed*/
+
+.google-maps {
+    position: relative;
+    padding-bottom: 55%;
+    overflow: hidden;
+    margin-bottom:0px;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90% !important;
+    height: 90% !important;
+}
+
+.transport {
+    padding: 0;
+    margin: 0;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+.transportDiv {
+    font-family: Roboto;
+    min-width: 250px;
+    border: dashed 2px;
+    text-align: center;
+}
+
+.transport p {
+    text-align:left;
+}
+
+.transport h3 {
+    font-family: 'Great Vibes';
+    font-size: 65px;
+    font-weight: 700;
+    margin: 1vh 0;
+}
+
+.transportIcon {
+    max-width: 100px;
+    max-height:100px;
+
+}
+
+/*Footer*/
+.myfooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+    margin-top: 25px;
+}
+
+.footerImage {
+    height: 100%;
+    max-height: 40px;
+    max-width: 100px;
+    float:right;
+}
+
+/* Provide sufficient contrast against white background */
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+
+.backgroundimage{
+    max-height:120px;
+    width:100%;
+    z-index: -2;
+    opacity: 0.6;
+}
+
+.homevideo{
+    width:100%;
+}
+.myHome{
+    padding:5px;
+    margin-right:50px;
+}
+
