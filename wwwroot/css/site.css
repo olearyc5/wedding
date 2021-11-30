@@ -64,6 +64,20 @@ img{
     width:100%;
 }
 
+h1, h2{
+    font-family: 'Great Vibes';
+    text-align: center;
+}
+
+h2{
+    font-size:50px;
+    margin:0;
+}
+
+h3{
+    font-size:35px;
+}
+
 button {
     width: 220px;
     height: 50px;
@@ -161,7 +175,7 @@ button:after {
 
 .menu {
     font-size: 18px;
-    margin: 15px 12%;
+    margin: 10px 12%;
     display: inline-flex;
     justify-content:space-between;
     width:76%;
@@ -200,44 +214,78 @@ button:after {
 }
 
 .homePage {
-    padding-top: 450px;
-    text-align: center;
     height: 100vh;
-    background: url(../img/IMGP2747.jpg) no-repeat center center;
-    background-size:cover;
-    max-height:650px;
+    position: relative;
 }
+
+#homePage1 {
+    background: url(../img/IMGP2919.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#homePage2 {
+    background: url(../img/IMGP2747.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#homePage3 {
+    background: url(../img/DSC01191.jpg) no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+.pageContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+}
+
+.schedule {
+    background: url(../img/DSC04249.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    color:white;
+}
+
+#pageContainer1 {
+
+}
+
+#pageContainer2 {
+    left: 20% !important;
+}
+
+#pageContainer3 {
+    left: 20% !important;
+}
+
+#pageContainerSchedule {
+    left: 75% !important;
+}
+
 
 .welcomeTitle {
     font-size: 125px;
-    font-family: 'Great Vibes';
-    text-align: center;
-    padding-top: 150px;
-    margin: 0px;
 }
 
 .dateSettings {
     font-size: 26px;
     font-family: Roboto;
     text-align: center;
-    display:inline;
-    max-width:400px;
 }
 
 .homeRSVP {
     text-align: center;
-    height: 105vh;
-    background: url(../img/IMGP2732.jpg) no-repeat center center;
-    padding:0;
-    margin:0;
+    background: url(../img/DSC01191.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
 }
 
 .RSVPbutton{
-    left:60%;
-    position:relative;
-    width:20%;
-    margin:auto;
-    margin:auto;
+    color:white;
 }
 
 .arrow{
@@ -262,10 +310,25 @@ button:after {
 }
 
 .venue-img{
-    width:80%;
+    width:45%;
+    height:100%;
+    float:right;
+    display:inline-flex;
+}
+
+venue-blurb{
+    display:inline-flex;
+    width:32%;
     height:100%;
     padding:0 20px;
-    max-height:900px;
+}
+
+#right{
+    float:right;
+}
+
+#left{
+    float:left;
 }
 
 .google-maps-home {
@@ -274,8 +337,9 @@ button:after {
     overflow: hidden;
     margin-bottom: 0px;
     border: 0;
-    width:80%;
+    width:40%;
     padding:20px;
+
 }
 
 .google-maps-home iframe {
