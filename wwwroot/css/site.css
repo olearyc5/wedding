@@ -70,8 +70,8 @@ h1, h2{
 }
 
 h2{
-    font-size:50px;
-    margin:0;
+    font-size:4.5em;
+    margin:1% 0;
 }
 
 h3{
@@ -89,6 +89,7 @@ button {
     position: relative;
     z-index: 0;
     border-radius: 10px;
+    font-size: 1.2em;
 }
 
 button:before {
@@ -250,7 +251,7 @@ button:after {
 }
 
 #pageContainer1 {
-
+    top:65% !important important;
 }
 
 #pageContainer2 {
@@ -267,11 +268,11 @@ button:after {
 
 
 .welcomeTitle {
-    font-size: 125px;
+    font-size: 10em;
 }
 
 .dateSettings {
-    font-size: 26px;
+    font-size: 2em;
     font-family: Roboto;
     text-align: center;
 }
@@ -298,8 +299,8 @@ button:after {
 .venue {
     height: 100vh;
     background-color: #FAECDB;
-    padding: 5%;
-    width: 90%;
+    padding: 1% 5%;
+    /*width: 90%;*/
     text-align:center;
 }
 
@@ -310,17 +311,17 @@ button:after {
 }
 
 .venue-img{
-    width:45%;
+    width:50%;
     height:100%;
     float:right;
-    display:inline-flex;
 }
 
-venue-blurb{
-    display:inline-flex;
-    width:32%;
-    height:100%;
-    padding:0 20px;
+.venue-blurb{
+    width:45%;
+    height:70%;
+    font-size:2em;
+/*    border:dashed;*/
+    padding: 2%;
 }
 
 #right{
@@ -333,12 +334,12 @@ venue-blurb{
 
 .google-maps-home {
     position: relative;
-    padding-bottom: 90%;
+    padding-bottom: 40% !important;
     overflow: hidden;
     margin-bottom: 0px;
     border: 0;
-    width:40%;
-    padding:20px;
+    width:48%;
+    margin-right:2%;
 
 }
 
