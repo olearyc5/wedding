@@ -377,7 +377,7 @@ button:after {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
-    width: 50%;
+    width: 45%;
 }
 
     /* The circles on the timeline */
@@ -386,7 +386,7 @@ button:after {
     position: absolute;
     width: 25px;
     height: 25px;
-    right: -17px;
+    right: -40px;
     background-color: white;
     border: 4px solid #FF9F55;
     top: 15px;
@@ -444,6 +444,7 @@ button:after {
     position: relative;
     border-radius: 6px;
     font-family: Raleway,'Open Sans';
+    border: 4px solid #FF9F55;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -610,3 +611,21 @@ body {
     margin-right:50px;
 }
 
+.RSVPhome {
+    background: url(../img/DSC01191.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+.accomod-img-right {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.accomod-img-left {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
