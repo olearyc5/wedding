@@ -175,7 +175,7 @@ button:after {
 }
 
 .menu {
-    font-size: 1.15em;
+    font-size: 1em;
     margin: 10px 12%;
     display: inline-flex;
     justify-content: space-between;
@@ -268,7 +268,7 @@ button:after {
 
 
 .welcomeTitle {
-    font-size: 10em;
+    font-size: 8em;
 }
 
 .dateSettings {
@@ -319,7 +319,7 @@ button:after {
 .venue-blurb{
     width:45%;
     height:70%;
-    font-size:2em;
+    font-size:1.75em;
 /*    border:dashed;*/
     padding: 2%;
 }
