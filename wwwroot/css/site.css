@@ -163,23 +163,23 @@ button:after {
 }
 
 .myHomelogo {
-/*    float: left;
+    /*    float: left;
     margin-right: 100px;*/
-/*    text-align:center;
+    /*    text-align:center;
     width:20%;
     float:left;*/
-    font-size:20px;
-    font-weight:700;
-    min-width:226px;
-    flex-wrap:nowrap;
+    font-size: 20px;
+    font-weight: 700;
+    min-width: 240px;
+    flex-wrap: nowrap;
 }
 
 .menu {
     font-size: 18px;
     margin: 10px 12%;
     display: inline-flex;
-    justify-content:space-between;
-    width:76%;
+    justify-content: space-between;
+    width: 76%;
 }
 
 /*.menu__right {
@@ -215,7 +215,7 @@ button:after {
 }
 
 .homePage {
-    height: 100vh;
+    height:100vh;
     position: relative;
 }
 
@@ -251,15 +251,15 @@ button:after {
 }
 
 #pageContainer1 {
-    top:65% !important important;
+    top:65% !important;
 }
 
 #pageContainer2 {
-    left: 20% !important;
+    left: 30% !important;
 }
 
 #pageContainer3 {
-    left: 20% !important;
+    left: 30% !important;
 }
 
 #pageContainerSchedule {
@@ -334,7 +334,7 @@ button:after {
 
 .google-maps-home {
     position: relative;
-    padding-bottom: 40% !important;
+    padding-bottom: 38% !important;
     overflow: hidden;
     margin-bottom: 0px;
     border: 0;
@@ -618,14 +618,21 @@ body {
     position: relative;
 }
 
+.Accomodationhome {
+    background-color: #FAECDB;
+    height:100%;
+}
+
 .accomod-img-right {
     float: right;
     width: 50%;
     height: 100%;
+    margin: 0 2%;
 }
 
 .accomod-img-left {
     float: left;
     width: 50%;
     height: 100%;
+    margin: 0 2%;
 }

@@ -12,9 +12,10 @@
 </head>
 <body>
     <header class="menu">
-        @*<div class="myHomelogo">
+        <div class="myHomelogo">
             <a asp-controller="Home" asp-action="Index">
                 <img class="homelogo" src="~/img/pittsburgh-silhouette-skyline-8.png" />
+                @(Wedding2.Models.Time.GetDate()) days to go
             </a>
         </div>
         <div class="menu">
@@ -22,19 +23,10 @@
                 <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
             </div>
             <div class="menuItems">
-                <a asp-area="" asp-controller="Story" asp-action="Index">Our Story</a>
-            </div>
-            <div class="menuItems">
-                <a asp-area="" asp-controller="Home" asp-action="Schedule">Schedule</a>
-            </div>
-            <div class="menuItems">
-                <a asp-area="" asp-controller="Story" asp-action="WeddingParty">Wedding Party</a>
-            </div>
-            <div class="menuItems">
                 <a asp-area="" asp-controller="Travel" asp-action="Index">Travel</a>
             </div>
             <div class="menuItems">
-                <a asp-area="" asp-controller="Photo" asp-action="Index">Photos</a>
+                <a asp-area="" asp-controller="Travel" asp-action="Accomodation">Accomodation</a>
             </div>
             <div class="menuItems">
                 <a asp-area="" asp-controller="Registry" asp-action="Index">Registry</a>
@@ -42,8 +34,8 @@
             <div class="menuItems">
                 <a asp-area="" asp-controller="Home" asp-action="RSVP">RSVP</a>
             </div>
-        </div>*@
-        <div class="menuItems">
+        </div>
+        @*<div class="menuItems">
             <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
         </div>
         <div class="menuItems">
@@ -62,7 +54,6 @@
                 @(Wedding2.Models.Time.GetDate()) days to go
             </a>
         </div>
-
         <div class="menuItems">
             <a asp-area="" asp-controller="Travel" asp-action="Index">Travel</a>
         </div>
@@ -74,7 +65,7 @@
         </div>
         <div class="menuItems">
             <a asp-area="" asp-controller="Home" asp-action="RSVP">RSVP</a>
-        </div>
+        </div>*@
 
     </header>
     <div class="container">
