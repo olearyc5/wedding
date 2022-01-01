@@ -35,6 +35,18 @@
                 <a asp-area="" asp-controller="Home" asp-action="RSVP">RSVP</a>
             </div>
         </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-area="" asp-controller="Travel" asp-action="Index">Travel</a></li>
+                <li><a asp-area="" asp-controller="Travel" asp-action="Accomodation">Accomodation</a></li>
+                <li><a asp-area="" asp-controller="Registry" asp-action="Index">Registry</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="RSVP">RSVP</a></li>
+            </ul>
+        </div>
         @*<div class="menuItems">
             <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
         </div>
@@ -84,7 +96,6 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/fullpage.js"></script>
-
     <script>
         new fullpage('#fullPage', {
 
