@@ -235,6 +235,7 @@ img{
             display: inline-flex;
             justify-content: space-between;
             width: 92%;
+            z-index: 1;
         }
     }
 
@@ -245,6 +246,7 @@ img{
             display: inline-flex;
             justify-content: space-between;
             width: 80%;
+            z-index: 1;
         }
     }
 
@@ -255,6 +257,7 @@ img{
             display: inline-flex;
             justify-content: space-between;
             width: 76%;
+            z-index: 1;
         }
     }
 
@@ -394,6 +397,9 @@ display: inline-flex;*/
     .container {
         height: max-content;
         width: 100%;
+        z-index:-1;
+        top:0;
+        position:absolute;
     }
 
     .homePage {
@@ -841,7 +847,7 @@ display: inline-flex;*/
     }
 
     /*Footer*/
-    .myfooter {
+    .myFooter {
         position: absolute;
         bottom: 0;
         width: 100%;
