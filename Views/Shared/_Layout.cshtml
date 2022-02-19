@@ -40,11 +40,11 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
             <ul class="mobile-menu">
-                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                <li><a asp-area="" asp-controller="Travel" asp-action="Index">Travel</a></li>
-                <li><a asp-area="" asp-controller="Travel" asp-action="Accomodation">Accomodation</a></li>
-                <li><a asp-area="" asp-controller="Registry" asp-action="Index">Registry</a></li>
-                <li><a asp-area="" asp-controller="Home" asp-action="RSVP">RSVP</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Index" onclick="enableScroll()">Home</a></li>
+                <li><a asp-area="" asp-controller="Travel" asp-action="Index" onclick="enableScroll()">Travel</a></li>
+                <li><a asp-area="" asp-controller="Travel" asp-action="Accomodation" onclick="enableScroll()">Accomodation</a></li>
+                <li><a asp-area="" asp-controller="Registry" asp-action="Index" onclick="enableScroll()">Registry</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="RSVP" onclick="enableScroll()">RSVP</a></li>
             </ul>
         </div>
         @*<div class="menuItems">
@@ -105,6 +105,8 @@
             //showActiveTooltip: true,
             slidesNavigation: true,
             //slidesNavPosition: 'bottom',
+            responsiveWidth: 800,
+            responsiveHeight: 500,
 
             ////Scrolling
 
@@ -131,6 +133,8 @@
             //showActiveTooltip: true,
             slidesNavigation: true,
             //slidesNavPosition: 'bottom',
+            responsiveWidth: 800,
+            responsiveHeight: 500,
 
             ////Scrolling
 
@@ -156,6 +160,8 @@
             //showActiveTooltip: true,
             slidesNavigation: true,
             //slidesNavPosition: 'bottom',
+            responsiveWidth: 800,
+            responsiveHeight:500,
 
             ////Scrolling
 
