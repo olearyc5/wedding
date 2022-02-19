@@ -14,7 +14,7 @@
     <header class="menu">
         <div class="myHomelogo">
             <a asp-controller="Home" asp-action="Index">
-                <img class="homelogo" src="~/img/pittsburgh-silhouette-skyline-8.png" />
+                <img class="homelogo" src="~/img/pittsburgh-silhouette-skyline-gold.png" />
                 @(Wedding2.Models.Time.GetDate()) days to go
             </a>
         </div>
@@ -86,255 +86,93 @@
         </main>
     </div>
 
-    <footer class="myFooter">
+    @*<footer class="myFooter">
         <div class="myPrivacyFooter">
             &copy; 2021 - Sandi &amp; Conor Wedding - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
             <img class="footerImage" src="~/img/pittsburgh-silhouette-skyline-8.png" />
         </div>
-    </footer>
+    </footer>*@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/fullpage.js"></script>
     <script>
         new fullpage('#fullPage', {
-
-            //Navigation
-            //menu: '#menu',
-            //lockAnchors: true,
+            ////Navigation
             //navigation: true,
-            //navigationPosition: 'bottom',
+            //navigationPosition: 'right',
             //navigationTooltips: ['firstSlide', 'secondSlide'],
-            showActiveTooltip: true,
-            //slidesNavigation: true,
+            //showActiveTooltip: true,
+            slidesNavigation: true,
             //slidesNavPosition: 'bottom',
 
-            //Scrolling
-            css3: true,
-            //scrollingSpeed: 700,
-            autoScrolling: true,
-            fitToSection: true,
-            //fitToSectionDelay: 1000,
-            //scrollBar: true,
-            //easing: 'easeInOutCubic',
-            easingcss3: 'ease',
-            //loopBottom: false,
-            //loopTop: false,
-            //loopHorizontal: true,
-            //continuousVertical: false,
-            //continuousHorizontal: false,
-            //scrollHorizontally: false,
-            //interlockedSlides: false,
-            //dragAndMove: false,
-            //offsetSections: false,
-            //resetSliders: false,
-            //fadingEffect: false,
-            //normalScrollElements: '#element1, .element2',
-            //scrollOverflow: false,
-            //scrollOverflowReset: false,
-            //scrollOverflowOptions: null,
-            //touchSensitivity: 15,
-            //bigSectionsDestination: null,
+            ////Scrolling
 
-            //Accessibility
+            ////Accessibility
             keyboardScrolling: true,
-            animateAnchor: true,
+            animateAnchor: false,
             recordHistory: true,
 
             ////Design
-            controlArrows: true,
-            verticalCentered: true,
-            //sectionsColor: ['#ccc', '#fff'],
-            //paddingTop: '3em',
-            //paddingBottom: '10px',
-            //fixedElements: '#header, .footer',
-            //responsiveWidth: 0,
-            //responsiveHeight: 0,
+            controlArrows: false,
+            controlArrowColor: '#bd9b16',
+            //verticalCentered: true,
             responsiveSlides: true,
-            //parallax: false,
-            //parallaxOptions: { type: 'reveal', percentage: 62, property: 'translate' },
-            //dropEffect: false,
-            //dropEffectOptions: { speed: 2300, color: '#F82F4D', zIndex: 9999 },
-            //waterEffect: false,
-            //waterEffectOptions: { animateContent: true, animateOnMouseMove: true },
-            //cards: false,
-            //cardsOptions: { perspective: 100, fadeContent: true, fadeBackground: true },
 
             ////Custom selectors
-            //sectionSelector: '.section',
-            //slideSelector: '.slide',
-            //lazyLoading: true,
-
-            ////events
-            //onLeave: function (origin, destination, direction) { },
-            //afterLoad: function (origin, destination, direction) { },
-            //afterRender: function () { },
-            //afterResize: function (width, height) { },
-            //afterReBuild: function () { },
-            //afterResponsive: function (isResponsive) { },
-            //afterSlideLoad: function (section, origin, destination, direction) { },
-            //onSlideLeave: function (section, origin, destination, direction) { }
-        })
+            lazyLoading: true,
+        });
 
         new fullpage('#AccomodationPage', {
-
-            //Navigation
-            //menu: '#menu',
-            //lockAnchors: true,
+            ////Navigation
             //navigation: true,
             //navigationPosition: 'right',
             //navigationTooltips: ['firstSlide', 'secondSlide'],
-            showActiveTooltip: true,
-            //slidesNavigation: true,
+            //showActiveTooltip: true,
+            slidesNavigation: true,
             //slidesNavPosition: 'bottom',
 
-            //Scrolling
-            css3: true,
-            //scrollingSpeed: 700,
-            autoScrolling: true,
-            fitToSection: true,
-            //fitToSectionDelay: 1000,
-            //scrollBar: true,
-            //easing: 'easeInOutCubic',
-            easingcss3: 'ease',
-            //loopBottom: false,
-            //loopTop: false,
-            //loopHorizontal: true,
-            //continuousVertical: false,
-            //continuousHorizontal: false,
-            //scrollHorizontally: false,
-            //interlockedSlides: false,
-            //dragAndMove: false,
-            //offsetSections: false,
-            //resetSliders: false,
-            //fadingEffect: false,
-            //normalScrollElements: '#element1, .element2',
-            //scrollOverflow: false,
-            //scrollOverflowReset: false,
-            //scrollOverflowOptions: null,
-            //touchSensitivity: 15,
-            //bigSectionsDestination: null,
+            ////Scrolling
 
-            //Accessibility
+            ////Accessibility
             keyboardScrolling: true,
-            animateAnchor: true,
+            animateAnchor: false,
             recordHistory: true,
 
             ////Design
-            controlArrows: true,
-            verticalCentered: true,
-            //sectionsColor: ['#ccc', '#fff'],
-            //paddingTop: '3em',
-            //paddingBottom: '10px',
-            //fixedElements: '#header, .footer',
-            //responsiveWidth: 0,
-            //responsiveHeight: 0,
-            //responsiveSlides: false,
-            //parallax: false,
-            //parallaxOptions: { type: 'reveal', percentage: 62, property: 'translate' },
-            //dropEffect: false,
-            //dropEffectOptions: { speed: 2300, color: '#F82F4D', zIndex: 9999 },
-            //waterEffect: false,
-            //waterEffectOptions: { animateContent: true, animateOnMouseMove: true },
-            //cards: false,
-            //cardsOptions: { perspective: 100, fadeContent: true, fadeBackground: true },
-
-            ////Custom selectors
-            //sectionSelector: '.section',
-            //slideSelector: '.slide',
-            //lazyLoading: true,
-
-            ////events
-            //onLeave: function (origin, destination, direction) { },
-            //afterLoad: function (origin, destination, direction) { },
-            //afterRender: function () { },
-            //afterResize: function (width, height) { },
-            //afterReBuild: function () { },
-            //afterResponsive: function (isResponsive) { },
-            //afterSlideLoad: function (section, origin, destination, direction) { },
-            //onSlideLeave: function (section, origin, destination, direction) { }
-        })
-
-        new fullpage('#TravelFullPage', {
-
-            //Navigation
-            //menu: '#menu',
-            //lockAnchors: true,
-            //navigation: true,
-            //navigationPosition: 'right',
-            //navigationTooltips: ['firstSlide', 'secondSlide'],
-            showActiveTooltip: true,
-            //slidesNavigation: true,
-            //slidesNavPosition: 'bottom',
-
-            //Scrolling
-            css3: true,
-            //scrollingSpeed: 700,
-            autoScrolling: true,
-            fitToSection: true,
-            //fitToSectionDelay: 1000,
-            //scrollBar: true,
-            //easing: 'easeInOutCubic',
-            easingcss3: 'ease',
-            //loopBottom: false,
-            //loopTop: false,
-            //loopHorizontal: true,
-            //continuousVertical: false,
-            //continuousHorizontal: false,
-            //scrollHorizontally: false,
-            //interlockedSlides: false,
-            //dragAndMove: false,
-            //offsetSections: false,
-            //resetSliders: false,
-            //fadingEffect: false,
-            //normalScrollElements: '#element1, .element2',
-            //scrollOverflow: false,
-            //scrollOverflowReset: false,
-            //scrollOverflowOptions: null,
-            //touchSensitivity: 15,
-            //bigSectionsDestination: null,
-
-            //Accessibility
-            keyboardScrolling: true,
-            animateAnchor: true,
-            recordHistory: true,
-
-            ////Design
-            controlArrows: true,
-            verticalCentered: true,
-            sectionsColor: ['#ccc', '#fff'],
-            paddingTop: '3em',
-            paddingBottom: '10px',
-            //fixedElements: '#header, .footer',
-            //responsiveWidth: 0,
-            //responsiveHeight: 0,
+            controlArrows: false,
+            controlArrowColor: '#bd9b16',
+            //verticalCentered: true,
             responsiveSlides: true,
-            //parallax: false,
-            //parallaxOptions: { type: 'reveal', percentage: 62, property: 'translate' },
-            //dropEffect: false,
-            //dropEffectOptions: { speed: 2300, color: '#F82F4D', zIndex: 9999 },
-            //waterEffect: false,
-            //waterEffectOptions: { animateContent: true, animateOnMouseMove: true },
-            cards: true,
-            //cardsOptions: { perspective: 100, fadeContent: true, fadeBackground: true },
 
             ////Custom selectors
-            sectionSelector: '.section',
-            slideSelector: '.slide',
-            //lazyLoading: true,
+            lazyLoading: true,
+        });
+        new fullpage('#TravelFullPage', {
+            ////Navigation
+            //navigation: true,
+            //navigationPosition: 'right',
+            //navigationTooltips: ['firstSlide', 'secondSlide'],
+            //showActiveTooltip: true,
+            slidesNavigation: true,
+            //slidesNavPosition: 'bottom',
 
-            ////events
-            //onLeave: function (origin, destination, direction) { },
-            //afterLoad: function (origin, destination, direction) { },
-            //afterRender: function () { },
-            //afterResize: function (width, height) { },
-            //afterReBuild: function () { },
-            //afterResponsive: function (isResponsive) { },
-            //afterSlideLoad: function (section, origin, destination, direction) { },
-            //onSlideLeave: function (section, origin, destination, direction) { }
-        })
+            ////Scrolling
 
+            ////Accessibility
+            keyboardScrolling: true,
+            animateAnchor: false,
+            recordHistory: true,
 
+            ////Design
+            controlArrows: false,
+            controlArrowColor: '#bd9b16',
+            //verticalCentered: true,
+            responsiveSlides: true,
+
+            ////Custom selectors
+            lazyLoading: true,
+        });
     </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
