@@ -465,13 +465,13 @@ display: inline-flex;*/
 #Pittsburgh {
     background: url('../img/IMGP2534 small.jpg') no-repeat center center;
     background-size: cover !important;
-    box-shadow: inset 0 0 0 1000px rgba(0,41,41,.5);
+    box-shadow: inset 0 0 0 1000px rgba(0,41,41,.75);
 }
 
 #NewYork {
     background: url('../img/DSCN9308.jpg') no-repeat center center;
     background-size: cover !important;
-    box-shadow: inset 0 0 0 1000px rgba(0,41,41,.3);
+    box-shadow: inset 0 0 0 1000px rgba(0,41,41,.4);
 }
 
     @media (max-width:900px) {
