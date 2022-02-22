@@ -81,7 +81,7 @@
 
     </header>
     <div class="container">
-        <main role="main" class="pb-3">
+        <main class="pb-3">
             @RenderBody()
         </main>
     </div>
@@ -106,7 +106,8 @@
             slidesNavigation: true,
             //slidesNavPosition: 'bottom',
             responsiveWidth: 800,
-            responsiveHeight: 500,
+            responsiveHeight: 850,
+            anchors: ['home', 'grandEstate', 'weddingSchedule','homeRSVP'],
 
             ////Scrolling
 
@@ -119,13 +120,13 @@
             controlArrows: false,
             controlArrowColor: '#bd9b16',
             //verticalCentered: true,
-            responsiveSlides: true,
+            //responsiveSlides: true,
 
             ////Custom selectors
-            lazyLoading: true,
+            lazyLoading: true
         });
 
-        new fullpage('#AccomodationPage', {
+        fullpage('#AccomodationPage', {
             ////Navigation
             //navigation: true,
             //navigationPosition: 'right',
@@ -134,7 +135,7 @@
             slidesNavigation: true,
             //slidesNavPosition: 'bottom',
             responsiveWidth: 800,
-            responsiveHeight: 500,
+            responsiveHeight: 850,
 
             ////Scrolling
 
@@ -147,12 +148,12 @@
             controlArrows: false,
             controlArrowColor: '#bd9b16',
             //verticalCentered: true,
-            responsiveSlides: true,
+            //responsiveSlides: true,
 
             ////Custom selectors
-            lazyLoading: true,
+            lazyLoading: true
         });
-        new fullpage('#TravelFullPage', {
+        fullpage('#TravelFullPage', {
             ////Navigation
             //navigation: true,
             //navigationPosition: 'right',
@@ -161,7 +162,7 @@
             slidesNavigation: true,
             //slidesNavPosition: 'bottom',
             responsiveWidth: 800,
-            responsiveHeight:500,
+            responsiveHeight:900,
 
             ////Scrolling
 
@@ -174,10 +175,10 @@
             controlArrows: false,
             controlArrowColor: '#bd9b16',
             //verticalCentered: true,
-            responsiveSlides: true,
+            //responsiveSlides: true,
 
             ////Custom selectors
-            lazyLoading: true,
+            lazyLoading: true
         });
     </script>
     @await RenderSectionAsync("Scripts", required: false)

@@ -398,7 +398,7 @@ display: inline-flex;*/
         #hamburger-icon {
             display: block;
         }
-    }
+    } 
 
     /*Container*/
 
@@ -442,12 +442,25 @@ display: inline-flex;*/
         z-index: 1;*/
     }
 
+@media (min-width:800px) {
+
     .schedule {
         background: url(../img/DSC01923.jpg) no-repeat center center;
         background-size: cover;
         height: 100vh;
         color: white;
     }
+}
+@media (max-width:800px) {
+
+    .schedule {
+        background: url(../img/DSC01923.jpg) no-repeat 20% 0%;
+        background-size: cover;
+        height: 100vh;
+        color: white;
+    }
+}
+
 
     #pageContainer1 {
         top: 65% !important;
@@ -465,45 +478,62 @@ display: inline-flex;*/
         left: 75% !important;
     }
 
-#Pittsburgh {
-    background: url('../img/IMGP2534 small.jpg') no-repeat center center;
-    background-size: cover !important;
-    box-shadow: inset 0 0 0 1000px rgba(0,41,41,.75);
+    #Pittsburgh {
+        background: url('../img/IMGP2534 small.jpg') no-repeat center center;
+        background-size: cover !important;
+        box-shadow: inset 0 0 0 1000px rgba(0,41,41,.75);
+    }
+@media (max-width:800px) {
+    #NewYork {
+        background: url('../img/DSCN9308.jpg') no-repeat 30% 0%;
+        background-size: cover !important;
+        box-shadow: inset 0 0 0 1000px rgba(0,41,41,.45);
+    }
+}
+@media (min-width:800px) {
+    #NewYork {
+        background: url('../img/DSCN9308.jpg') no-repeat center center;
+        background-size: cover !important;
+        box-shadow: inset 0 0 0 1000px rgba(0,41,41,.45);
+    }
 }
 
-#NewYork {
-    background: url('../img/DSCN9308.jpg') no-repeat center center;
-    background-size: cover !important;
-    box-shadow: inset 0 0 0 1000px rgba(0,41,41,.45);
-}
+    #Philly {
+        background: url('../img/IMGP2747.jpg') no-repeat center center;
+        background-size: cover !important;
+        box-shadow: inset 0 0 0 1000px rgba(0,41,41,.55);
+    }
 
-#Philly {
-    background: url('../img/IMGP2747.jpg') no-repeat center center;
-    background-size: cover !important;
-    box-shadow: inset 0 0 0 1000px rgba(0,41,41,.55);
-}
+    @media (min-width:800px) {
+        #Johnstown {
+            background: url('../img/IMGP2732.jpg') no-repeat center center;
+            background-size: cover !important;
+            box-shadow: inset 0 0 0 1000px rgba(0,41,41,.5);
+        }
+    }
 
-#Johnstown {
-    background: url('../img/IMGP2732.jpg') no-repeat center center;
-    background-size: cover !important;
-    box-shadow: inset 0 0 0 1000px rgba(0,41,41,.5);
-}
+    @media (max-width:800px) {
+        #Johnstown {
+            background: url('../img/IMGP2732.jpg') no-repeat 15% 0%;
+            background-size: cover !important;
+            box-shadow: inset 0 0 0 1000px rgba(0,41,41,.5);
+        }
+    }
 
-#indy {
-    background: url('../img/IMGP2878.jpg') no-repeat center center;
-    background-size: cover !important;
-    box-shadow: inset 0 0 0 1000px rgba(0,41,41,.5);
-}
+    #indy {
+        background: url('../img/IMGP2878.jpg') no-repeat center center;
+        background-size: cover !important;
+        box-shadow: inset 0 0 0 1000px rgba(0,41,41,.5);
+    }
 
-#World{
+    #World {
+    }
 
-}
-
-#Europe {
-    background: url('../img/Amsterdam.jpg') no-repeat center center;
-    background-size: cover !important;
-    box-shadow: inset 0 0 0 1000px rgba(0,41,41,.45);
-}
+    #Europe {
+        background: url('../img/Amsterdam.jpg') no-repeat center center;
+        background-size: cover !important;
+        box-shadow: inset 0 0 0 1000px rgba(0,41,41,.45);
+    }
 
     @media (max-width:900px) {
         .welcomeTitle {
@@ -534,7 +564,7 @@ display: inline-flex;*/
             font-size: 1em;
             font-family: Roboto;
             text-align: center;
-            color:#d9dade;
+            color: #d9dade;
         }
     }
 
@@ -556,12 +586,25 @@ display: inline-flex;*/
         }
     }
 
-    .homeRSVP {
-        text-align: center;
-        background: url(../img/DSC01191.jpg) no-repeat center center;
-        background-size: cover;
-        height: 100%;
-        position: relative;
+
+    @media (min-width:800px) {
+        .homeRSVP {
+            text-align: center;
+            background: url(../img/DSC01191.jpg) no-repeat center center;
+            background-size: cover;
+            height: 100%;
+            position: relative;
+        }
+    }
+
+    @media (max-width:800px) {
+        .homeRSVP {
+            text-align: center;
+            background: url(../img/DSC01191.jpg) no-repeat 80% 0%;
+            background-size: cover;
+            height: 100%;
+            position: relative;
+        }
     }
 
     .RSVPbutton {
@@ -575,14 +618,14 @@ display: inline-flex;*/
         display: inline-block;
     }
 
-.venue {
-    height: 100vh;
-    /*background-color: #FAECDB;*/
-    background-color: #002929;
-    padding: 1% 5%;
-    /*width: 90%;*/
-    text-align: center;
-}
+    .venue {
+        height: 100vh;
+        /*background-color: #FAECDB;*/
+        background-color: #002929;
+        padding: 1% 5%;
+        /*width: 90%;*/
+        text-align: center;
+    }
 
     .venue-home {
         display: inline-flex;
@@ -590,14 +633,14 @@ display: inline-flex;*/
         width: 100%;
     }
 
-    @media (max-width:1001px) {
+    @media (max-width:801px) {
         .venue-img {
             margin: 0 12%;
             text-align: center;
         }
     }
 
-    @media (min-width:1001px) {
+    @media (min-width:801px) {
         .venue-img {
             width: 50%;
             height: 65vh;
@@ -607,18 +650,19 @@ display: inline-flex;*/
         }
     }
 
-    @media (max-width:1001px) {
+    @media (max-width:801px) {
         .venue-blurb {
             width: 96%;
             height: 90vh;
             font-size: 1em;
             /*    border:dashed;*/
             padding: 0 2% 2% 2%;
+            display: contents;
         }
     }
 
 
-    @media (min-width:1001px) {
+    @media (min-width:801px) {
         .venue-blurb {
             width: 45%;
             height: 90%;
@@ -717,6 +761,63 @@ display: inline-flex;*/
     }
 
     .google-maps-home iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    @media (max-width:500px) {
+        .google-maps-travel {
+            position: absolute;
+            padding-bottom: 15% !important;
+            overflow: hidden;
+            margin-bottom: 0px;
+            border: 0;
+            width: 15%;
+            bottom: 2%;
+        }
+    }
+
+    @media (max-width:700px) {
+        .google-maps-travel {
+            position: absolute;
+            padding-bottom: 10% !important;
+            overflow: hidden;
+            margin-bottom: 0px;
+            border: 0;
+            width: 18%;
+            bottom: 3%;
+        }
+    }
+
+
+    @media (max-width:1000px) {
+        .google-maps-travel {
+            position: absolute;
+            padding-bottom: 7% !important;
+            overflow: hidden;
+            margin-bottom: 0px;
+            border: 0;
+            width: 18%;
+            bottom: 3%;
+        }
+    }
+
+    @media (min-width:1000px) {
+        .google-maps-travel {
+            position: relative;
+            padding-bottom: 34% !important;
+            overflow: hidden;
+            margin-bottom: 0px;
+            border: 0;
+            width: 48%;
+            margin-right: 2%;
+        }
+    }
+
+    .google-maps-travel iframe {
         position: absolute;
         top: 0;
         left: 0;
@@ -985,35 +1086,77 @@ display: inline-flex;*/
         margin-right: 50px;
     }
 
-    .RSVPhome {
-        background: url(../img/DSC01191.jpg) no-repeat center center;
-        background-size: cover;
+    @media (max-width:800px) {
+        .RSVPhome {
+            background: url(../img/DSC01191.jpg) no-repeat 80% 0%;
+            background-size: cover;
+            height: 100%;
+            position: relative;
+        }
+    }
+
+    @media (min-width:800px) {
+        .RSVPhome {
+            background: url(../img/DSC01191.jpg) no-repeat center center;
+            background-size: cover;
+            height: 100%;
+            position: relative;
+        }
+    }
+
+@media (max-width:800px) {
+    #Registry {
+        background: url('../img/Ogham Sandi Left.png'),url('../img/Ogham Sandi Left.png');
+        background-position: left top,right bottom;
+        background-repeat: no-repeat, no-repeat;
+        /*background-size: cover;*/
+        background-color: #002929;
         height: 100%;
         position: relative;
     }
-
-.Accomodationhome {
-    /*background-color: #FAECDB;*/
-    background-color: #002929;
-    height: 100%;
 }
 
-.TravelFullPage {
-    /*background-color: #FAECDB;*/
-    background-color: #002929;
-    height: 100%;
+@media (min-width:800px) {
+    #Registry {
+
+        background: url('../img/Ogham Sandi Left.png'),url('../img/Ogham Sandi Left.png');
+        background-position: left top,right bottom;
+        background-repeat: no-repeat, no-repeat;
+        background-color: #002929;
+        height: 100%;
+        position: relative;
+    }
 }
 
-    .accomod-img-right {
-        float: right;
-        width: 50%;
-        height: 100%;
-        margin: 0 2%;
-    }
+.registryFrame{
+    width:60%;
+    margin:auto;
+    display:block;
+}
 
-    .accomod-img-left {
-        float: left;
-        width: 47%;
-        height: 100%;
-        margin: 0 2%;
-    }
+
+    .Accomodationhome {
+            /*background-color: #FAECDB;*/
+            background-color: #002929;
+            height: 100%;
+        }
+
+        .TravelFullPage {
+            /*background-color: #FAECDB;*/
+            background-color: #002929;
+            height: 100%;
+        }
+
+        .accomod-img-right {
+            float: right;
+            width: 50%;
+            height: 100%;
+            margin: 0 2%;
+        }
+
+        .accomod-img-left {
+            float: left;
+            width: 47%;
+            height: 100%;
+            margin: 0 2%;
+        }
