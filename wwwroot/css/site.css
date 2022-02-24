@@ -504,12 +504,19 @@ display: inline-flex;*/
         box-shadow: inset 0 0 0 1000px rgba(0,41,41,.55);
     }
 
+@media (max-width:800px) {
+    #Johnstown {
+        background-color: #2E76BE !important;
+    }
+}
 
-#Johnstown {
-    background: url('../img/Ogham Sandi Left.png'),url('../img/Ogham Sandi Left.png');
-    background-position: left top,right bottom;
-    background-repeat: no-repeat, no-repeat;
-    background-color: #2E76BE !important;
+@media (min-width:800px) {
+    #Johnstown {
+        background: url('../img/Ogham Sandi Left.png'),url('../img/Ogham Sandi Left.png');
+        background-position: left top,right bottom;
+        background-repeat: no-repeat, no-repeat;
+        background-color: #2E76BE !important;
+    }
 }
 
 
@@ -1098,58 +1105,60 @@ display: inline-flex;*/
         }
     }
 
-@media (max-width:800px) {
-    #Registry {
-        background: url('../img/Ogham Sandi Left.png'),url('../img/Ogham Sandi Left.png');
-        background-position: left top,right bottom;
-        background-repeat: no-repeat, no-repeat;
-        /*background-size: cover;*/
-        background-color: #009381;
-        height: 100%;
-        position: relative;
+    @media (max-width:800px) {
+        #Registry {
+            /*background-size: cover;*/
+            background-color: #009381;
+            height: 100%;
+            position: relative;
+        }
     }
-}
 
-@media (min-width:800px) {
-    #Registry {
-        background: url('../img/Ogham Sandi Left.png'),url('../img/Ogham Sandi Left.png');
-        background-position: left top,right bottom;
-        background-repeat: no-repeat, no-repeat;
-        background-color: #009381;
-        height: 100%;
-        position: relative;
+    @media (min-width:800px) {
+        #Registry {
+            background: url('../img/Ogham Sandi Left.png'),url('../img/Ogham Sandi Left.png');
+            background-position: left top,right bottom;
+            background-repeat: no-repeat, no-repeat;
+            background-color: #009381;
+            height: 100%;
+            position: relative;
+        }
     }
-}
 
-.registryFrame{
-    width:60%;
-    margin:auto;
-    display:block;
-}
+    .registryText{
+        text-align:center;
+        font-size:1.4em;
+    }
+
+    .registryFrame {
+        width: 60%;
+        margin: auto;
+        display: block;
+    }
 
 
     .Accomodationhome {
-            /*background-color: #FAECDB;*/
-            background-color: #002929;
-            height: 100%;
-        }
+        /*background-color: #FAECDB;*/
+        background-color: #002929;
+        height: 100%;
+    }
 
-        .TravelFullPage {
-            /*background-color: #FAECDB;*/
-            background-color: #002929;
-            height: 100%;
-        }
+    .TravelFullPage {
+        /*background-color: #FAECDB;*/
+        background-color: #002929;
+        height: 100%;
+    }
 
-        .accomod-img-right {
-            float: right;
-            width: 50%;
-            height: 100%;
-            margin: 0 2%;
-        }
+    .accomod-img-right {
+        float: right;
+        width: 50%;
+        height: 100%;
+        margin: 0 2%;
+    }
 
-        .accomod-img-left {
-            float: left;
-            width: 47%;
-            height: 100%;
-            margin: 0 2%;
-        }
+    .accomod-img-left {
+        float: left;
+        width: 47%;
+        height: 100%;
+        margin: 0 2%;
+    }
