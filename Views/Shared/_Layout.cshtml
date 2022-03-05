@@ -47,37 +47,6 @@
                 <li><a asp-area="" asp-controller="Home" asp-action="RSVP" onclick="enableScroll()">RSVP</a></li>
             </ul>
         </div>
-        @*<div class="menuItems">
-            <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-        </div>
-        <div class="menuItems">
-            <a asp-area="" asp-controller="Story" asp-action="Index">Our Story</a>
-        </div>
-        <div class="menuItems">
-            <a asp-area="" asp-controller="Photo" asp-action="Index">Photos</a>
-        </div>
-        <div class="menuItems">
-            <a asp-area="" asp-controller="Story" asp-action="WeddingParty">Wedding Party</a>
-        </div>
-
-        <div class="myHomelogo">
-            <a asp-controller="Home" asp-action="Index">
-                <img class="homelogo" src="~/img/pittsburgh-silhouette-skyline-8.png" />
-                @(Wedding2.Models.Time.GetDate()) days to go
-            </a>
-        </div>
-        <div class="menuItems">
-            <a asp-area="" asp-controller="Travel" asp-action="Index">Travel</a>
-        </div>
-        <div class="menuItems">
-            <a asp-area="" asp-controller="Travel" asp-action="Accomodation">Accomodation</a>
-        </div>
-        <div class="menuItems">
-            <a asp-area="" asp-controller="Registry" asp-action="Index">Registry</a>
-        </div>
-        <div class="menuItems">
-            <a asp-area="" asp-controller="Home" asp-action="RSVP">RSVP</a>
-        </div>*@
 
     </header>
     <div class="container">
@@ -86,34 +55,28 @@
         </main>
     </div>
 
-    @*<footer class="myFooter">
-        <div class="myPrivacyFooter">
-            &copy; 2021 - Sandi &amp; Conor Wedding - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-            <img class="footerImage" src="~/img/pittsburgh-silhouette-skyline-8.png" />
-        </div>
-    </footer>*@
+    @*<script src="~/js/fullpage.js"></script>*@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="~/js/fullpage.js"></script>
-    <script>
+
+    @*<script src="~/js/site.js" asp-append-version="true"></script>*@
+    @*<script>
         new fullpage('#fullPage', {
             ////Navigation
             //navigation: true,
             //navigationPosition: 'right',
-            //navigationTooltips: ['firstSlide', 'secondSlide'],
+            navigationTooltips: ['firstSlide', 'secondSlide'],
             //showActiveTooltip: true,
-            slidesNavigation: true,
+            //slidesNavigation: true,
             //slidesNavPosition: 'bottom',
-            responsiveWidth: 800,
-            responsiveHeight: 850,
-            anchors: ['home', 'grandEstate', 'weddingSchedule','homeRSVP'],
+            responsiveWidth: 850,
+            responsiveHeight: 900,
+            anchors: ['home', 'grandEstate', 'weddingSchedule', 'homeRSVP'],
 
             ////Scrolling
 
             ////Accessibility
             keyboardScrolling: true,
-            animateAnchor: false,
+            //animateAnchor: false,
             recordHistory: true,
 
             ////Design
@@ -126,61 +89,61 @@
             lazyLoading: true
         });
 
-        fullpage('#AccomodationPage', {
-            ////Navigation
-            //navigation: true,
-            //navigationPosition: 'right',
-            //navigationTooltips: ['firstSlide', 'secondSlide'],
-            //showActiveTooltip: true,
-            slidesNavigation: true,
-            //slidesNavPosition: 'bottom',
-            responsiveWidth: 800,
-            responsiveHeight: 850,
+                //fullpage('#AccomodationPage', {
+                //    ////Navigation
+                //    //navigation: true,
+                //    //navigationPosition: 'right',
+                //    //navigationTooltips: ['firstSlide', 'secondSlide'],
+                //    //showActiveTooltip: true,
+                //    slidesNavigation: true,
+                //    //slidesNavPosition: 'bottom',
+                //    responsiveWidth: 850,
+                //    responsiveHeight: 900,
 
-            ////Scrolling
+                //    ////Scrolling
 
-            ////Accessibility
-            keyboardScrolling: true,
-            animateAnchor: false,
-            recordHistory: true,
+                //    ////Accessibility
+                //    keyboardScrolling: true,
+                //    animateAnchor: false,
+                //    recordHistory: true,
 
-            ////Design
-            controlArrows: false,
-            controlArrowColor: '#bd9b16',
-            //verticalCentered: true,
-            //responsiveSlides: true,
+                //    ////Design
+                //    controlArrows: false,
+                //    controlArrowColor: '#bd9b16',
+                //    //verticalCentered: true,
+                //    //responsiveSlides: true,
 
-            ////Custom selectors
-            lazyLoading: true
-        });
-        fullpage('#TravelFullPage', {
-            ////Navigation
-            //navigation: true,
-            //navigationPosition: 'right',
-            //navigationTooltips: ['firstSlide', 'secondSlide'],
-            //showActiveTooltip: true,
-            slidesNavigation: true,
-            //slidesNavPosition: 'bottom',
-            responsiveWidth: 800,
-            responsiveHeight:900,
+                //    ////Custom selectors
+                //    lazyLoading: true
+                //});
+                //fullpage('#TravelFullPage', {
+                //    ////Navigation
+                //    //navigation: true,
+                //    //navigationPosition: 'right',
+                //    //navigationTooltips: ['firstSlide', 'secondSlide'],
+                //    //showActiveTooltip: true,
+                //    slidesNavigation: true,
+                //    //slidesNavPosition: 'bottom',
+                //    responsiveWidth: 800,
+                //    responsiveHeight:900,
 
-            ////Scrolling
+                //    ////Scrolling
 
-            ////Accessibility
-            keyboardScrolling: true,
-            animateAnchor: false,
-            recordHistory: true,
+                //    ////Accessibility
+                //    keyboardScrolling: true,
+                //    animateAnchor: false,
+                //    recordHistory: true,
 
-            ////Design
-            controlArrows: false,
-            controlArrowColor: '#bd9b16',
-            //verticalCentered: true,
-            //responsiveSlides: true,
+                //    ////Design
+                //    controlArrows: false,
+                //    controlArrowColor: '#bd9b16',
+                //    //verticalCentered: true,
+                //    //responsiveSlides: true,
 
-            ////Custom selectors
-            lazyLoading: true
-        });
-    </script>
+                //    ////Custom selectors
+                //    lazyLoading: true
+                //});
+    </script>*@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
