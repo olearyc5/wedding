@@ -2,7 +2,7 @@ name: Build and deploy .NET Core application to Web App WeddingOlearyOshaben
 on:
   push:
     branches:
-    - ResponsiveCSS
+    - RemovingFullPage
 env:
   AZURE_WEBAPP_NAME: WeddingOlearyOshaben
   AZURE_WEBAPP_PACKAGE_PATH: .\published
