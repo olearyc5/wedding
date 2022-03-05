@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -6,6 +6,10 @@
 
   <ItemGroup>
     <None Remove="Views\Conor &amp; Sandi.mp4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\.well-known\pki-validation\54C87E123E049E77F754501EB537916E.txt" />
   </ItemGroup>
 
 </Project>

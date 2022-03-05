@@ -20,5 +20,10 @@ namespace Wedding2.Controllers
         {
             return View();
         }
+
+        public IActionResult Accomodation()
+        {
+            return View();
+        }
     }
 }

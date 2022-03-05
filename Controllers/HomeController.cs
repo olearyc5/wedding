@@ -24,10 +24,6 @@ namespace Wedding2.Controllers
             //Time time = Time.GetDate();
             return View();
         }
-        public IActionResult Schedule()
-        {
-            return View();
-        }
 
         public IActionResult Privacy()
         {

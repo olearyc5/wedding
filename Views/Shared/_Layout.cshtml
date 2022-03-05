@@ -8,65 +8,25 @@
     <title>@ViewData["Title"] - Sandi &amp; Conor</title>
     @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/fullpage.css" />
 </head>
 <body>
     <header class="menu">
-        @*<div class="myHomelogo">
-                <a asp-controller="Home" asp-action="Index">
-                    <img class="homelogo" src="~/img/pittsburgh-silhouette-skyline-8.png" />
-                </a>
-            </div>
-            <div class="menu">
-                <div class="menuItems">
-                    <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                </div>
-                <div class="menuItems">
-                    <a asp-area="" asp-controller="Story" asp-action="Index">Our Story</a>
-                </div>
-                <div class="menuItems">
-                    <a asp-area="" asp-controller="Home" asp-action="Schedule">Schedule</a>
-                </div>
-                <div class="menuItems">
-                    <a asp-area="" asp-controller="Story" asp-action="WeddingParty">Wedding Party</a>
-                </div>
-                <div class="menuItems">
-                    <a asp-area="" asp-controller="Travel" asp-action="Index">Travel</a>
-                </div>
-                <div class="menuItems">
-                    <a asp-area="" asp-controller="Photo" asp-action="Index">Photos</a>
-                </div>
-                <div class="menuItems">
-                    <a asp-area="" asp-controller="Registry" asp-action="Index">Registry</a>
-                </div>
-                <div class="menuItems">
-                    <a asp-area="" asp-controller="Home" asp-action="RSVP">RSVP</a>
-                </div>
-            </div>*@
+        <div class="myHomelogo">
+            <a asp-controller="Home" asp-action="Index">
+                <img class="homelogo" src="~/img/pittsburgh-silhouette-skyline-gold.png" />
+                @(Wedding2.Models.Time.GetDate()) days to go
+            </a>
+        </div>
+        <div class="menu">
             <div class="menuItems">
                 <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
             </div>
             <div class="menuItems">
-                <a asp-area="" asp-controller="Story" asp-action="Index">Our Story</a>
-            </div>
-            <div class="menuItems">
-                <a asp-area="" asp-controller="Home" asp-action="Schedule">Schedule</a>
-            </div>
-            <div class="menuItems">
-                <a asp-area="" asp-controller="Story" asp-action="WeddingParty">Wedding Party</a>
-            </div>
-
-        <div class="myHomelogo">
-            <a asp-controller="Home" asp-action="Index">
-                <img class="homelogo" src="~/img/pittsburgh-silhouette-skyline-8.png" />
-                @(Wedding2.Models.Time.GetDate()) days to go
-            </a>
-        </div>
-
-            <div class="menuItems">
                 <a asp-area="" asp-controller="Travel" asp-action="Index">Travel</a>
             </div>
             <div class="menuItems">
-                <a asp-area="" asp-controller="Photo" asp-action="Index">Photos</a>
+                <a asp-area="" asp-controller="Travel" asp-action="Accomodation">Accomodation</a>
             </div>
             <div class="menuItems">
                 <a asp-area="" asp-controller="Registry" asp-action="Index">Registry</a>
@@ -74,23 +34,153 @@
             <div class="menuItems">
                 <a asp-area="" asp-controller="Home" asp-action="RSVP">RSVP</a>
             </div>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a asp-area="" asp-controller="Home" asp-action="Index" onclick="enableScroll()">Home</a></li>
+                <li><a asp-area="" asp-controller="Travel" asp-action="Index" onclick="enableScroll()">Travel</a></li>
+                <li><a asp-area="" asp-controller="Travel" asp-action="Accomodation" onclick="enableScroll()">Accomodation</a></li>
+                <li><a asp-area="" asp-controller="Registry" asp-action="Index" onclick="enableScroll()">Registry</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="RSVP" onclick="enableScroll()">RSVP</a></li>
+            </ul>
+        </div>
+        @*<div class="menuItems">
+            <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+        </div>
+        <div class="menuItems">
+            <a asp-area="" asp-controller="Story" asp-action="Index">Our Story</a>
+        </div>
+        <div class="menuItems">
+            <a asp-area="" asp-controller="Photo" asp-action="Index">Photos</a>
+        </div>
+        <div class="menuItems">
+            <a asp-area="" asp-controller="Story" asp-action="WeddingParty">Wedding Party</a>
+        </div>
+
+        <div class="myHomelogo">
+            <a asp-controller="Home" asp-action="Index">
+                <img class="homelogo" src="~/img/pittsburgh-silhouette-skyline-8.png" />
+                @(Wedding2.Models.Time.GetDate()) days to go
+            </a>
+        </div>
+        <div class="menuItems">
+            <a asp-area="" asp-controller="Travel" asp-action="Index">Travel</a>
+        </div>
+        <div class="menuItems">
+            <a asp-area="" asp-controller="Travel" asp-action="Accomodation">Accomodation</a>
+        </div>
+        <div class="menuItems">
+            <a asp-area="" asp-controller="Registry" asp-action="Index">Registry</a>
+        </div>
+        <div class="menuItems">
+            <a asp-area="" asp-controller="Home" asp-action="RSVP">RSVP</a>
+        </div>*@
 
     </header>
     <div class="container">
-        <main role="main" class="pb-3">
+        <main class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="myFooter">
+    @*<footer class="myFooter">
         <div class="myPrivacyFooter">
             &copy; 2021 - Sandi &amp; Conor Wedding - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
             <img class="footerImage" src="~/img/pittsburgh-silhouette-skyline-8.png" />
         </div>
-    </footer>
+    </footer>*@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/fullpage.js"></script>
+    <script>
+        new fullpage('#fullPage', {
+            ////Navigation
+            //navigation: true,
+            //navigationPosition: 'right',
+            //navigationTooltips: ['firstSlide', 'secondSlide'],
+            //showActiveTooltip: true,
+            slidesNavigation: true,
+            //slidesNavPosition: 'bottom',
+            responsiveWidth: 800,
+            responsiveHeight: 850,
+            anchors: ['home', 'grandEstate', 'weddingSchedule','homeRSVP'],
+
+            ////Scrolling
+
+            ////Accessibility
+            keyboardScrolling: true,
+            animateAnchor: false,
+            recordHistory: true,
+
+            ////Design
+            controlArrows: false,
+            controlArrowColor: '#bd9b16',
+            //verticalCentered: true,
+            //responsiveSlides: true,
+
+            ////Custom selectors
+            lazyLoading: true
+        });
+
+        fullpage('#AccomodationPage', {
+            ////Navigation
+            //navigation: true,
+            //navigationPosition: 'right',
+            //navigationTooltips: ['firstSlide', 'secondSlide'],
+            //showActiveTooltip: true,
+            slidesNavigation: true,
+            //slidesNavPosition: 'bottom',
+            responsiveWidth: 800,
+            responsiveHeight: 850,
+
+            ////Scrolling
+
+            ////Accessibility
+            keyboardScrolling: true,
+            animateAnchor: false,
+            recordHistory: true,
+
+            ////Design
+            controlArrows: false,
+            controlArrowColor: '#bd9b16',
+            //verticalCentered: true,
+            //responsiveSlides: true,
+
+            ////Custom selectors
+            lazyLoading: true
+        });
+        fullpage('#TravelFullPage', {
+            ////Navigation
+            //navigation: true,
+            //navigationPosition: 'right',
+            //navigationTooltips: ['firstSlide', 'secondSlide'],
+            //showActiveTooltip: true,
+            slidesNavigation: true,
+            //slidesNavPosition: 'bottom',
+            responsiveWidth: 800,
+            responsiveHeight:900,
+
+            ////Scrolling
+
+            ////Accessibility
+            keyboardScrolling: true,
+            animateAnchor: false,
+            recordHistory: true,
+
+            ////Design
+            controlArrows: false,
+            controlArrowColor: '#bd9b16',
+            //verticalCentered: true,
+            //responsiveSlides: true,
+
+            ////Custom selectors
+            lazyLoading: true
+        });
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

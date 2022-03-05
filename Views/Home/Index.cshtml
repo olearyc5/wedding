@@ -1,56 +1,90 @@
 ﻿
-
 @{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="homePage">
-    <h1 class="welcomeTitle">Sandi &amp Conor</h1>
-    <p class="dateSettings">
-        Saturday, 13th August 2021 <br />
-        Hidden Acres at The Grand Estate <br /> Ford City, PA
-    </p>
-    <div class="arrow">
-        <a href="#venue">
-            <img src="~/img/arrow.png" />
-        </a>
-    </div>
-</div>
-@*<video class="homevideo" controls="controls" autoplay="autoplay">
-        <source srcset="~/video/CSWedding.mp4" type="video/mp4" />
-    </video>*@
-<!--<div class="myCarousel">-->
-@*<img src="~/img/IMGP2747.jpg" />*@
-<!--</div>-->
-
-<div class="venue">
-    <a id="venue"></a>
-    <h2>The Grand Estate</h2>
-    <div class="venue-home">
-        <div class="google-maps-home">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1615398.5384435584!2d-78.77098747938172!3d40.77718902749891!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0f6f544eabff695!2sThe%20Grand%20Estate%20at%20Hidden%20Acres!5e0!3m2!1sen!2sie!4v1635981986162!5m2!1sen!2sie" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div class="venue-img">
-            <img src="~/img/the_grand_estate_wedding_photo-26.jpg" />
+<div id="fullPage">
+    <div class="section">
+        <div class="homePage" id="homePage1">
+            <div class="pageContainer" id="pageContainer1">
+                <h1 class="welcomeTitle">Sandi &amp; Conor</h1>
+                <p class="dateSettings">
+                    Saturday, 13th August 2021 <br />
+                    Hidden Acres at The Grand Estate <br /> Ford City, PA
+                </p>
+            </div>
         </div>
     </div>
-    <div class="arrow">
-        <a href="#homeRSVP">
-            <img src="~/img/arrow.png" />
-        </a>
+    <div class="section">
+        <div class="slide" data-anchor="grandEstateVenue">
+            <div class="venue">
+                <h2>The Grand Estate</h2>
+                <div class="venue-img">
+                    <img src="~/img/the_grand_estate_wedding_photo-26.jpg" />
+                </div>
+                <div class="venue-blurb" id="right">
+                    <p>The Grand Estate at Hidden Acres is located north-west of Pittsburgh, PA - about a 45-minute drive from the city's downtown.The easiest access is by car, as there are no public transportation options.</p>
+                    <p>The ceremony, cocktail hour, and reception will all take place on site at the Grand Estate.</p>
+                    <p>There are two room blocks available for guests at Lenape Heights Golf Resort and the Spring Hill Suites Marriot at Pittsburgh Mills. There will be a shuttle service running between these locations and the Grand Estate for wedding guests.</p>
+                    <div>
+                        <a href="http://fantasyrugbydraft.com/">8Getting there </a>
+                    </div>
+                </div>
+
+            </div>
+        </div> 
+        <div class="slide" data-anchor="gettingThere">
+            <div class="venue">
+                <h2>Getting There</h2>
+                <div class="venue-home">
+                    <div class="venue-blurb" id="left">
+                        <p>For more information about how to get here, please click through below.</p>
+                        <button>
+                            <a class="myButton" asp-area="" asp-controller="Travel" asp-action="Index">How to get here</a>
+                        </button>
+                        <p>If you are interested in the hotel room blocks, or if you want to know about other accomodation options in the area, please click here </p>
+                        <button>
+                            <a class="myButton" asp-area="" asp-controller="Travel" asp-action="Accomodation">Accomodation</a>
+                        </button>
+                        <div>
+                            <a class="nextSlide" href="http://fantasyrugbydraft.com/">7Getting there -></a>
+                        </div>
+                    </div>
+                    <div class="google-maps-home">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1615398.5384435584!2d-78.77098747938172!3d40.77718902749891!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0f6f544eabff695!2sThe%20Grand%20Estate%20at%20Hidden%20Acres!5e0!3m2!1sen!2sie!4v1635981986162!5m2!1sen!2sie" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-
-
-<div class="homeRSVP">
-    <a id="homeRSVP"></a>
-    <div class="RSVPbutton">
-        <h3>We would love to see you there</h3>
-        <p>13th August 2022</p>
-        <button>
-            <a class="myButton" asp-area="" asp-controller="Home" asp-action="RSVP">Click here to RSVP</a>
-        </button>
-        <p>Please RSVP by this date</p>
+    <div class="section">
+        <div class="schedule">
+            <div class="pageContainer">
+                <h2>Schedule</h2>
+                <p>Saturday 13th August 2022</p>
+                Grand Estate - getting ready </br>
+                Grand Estate - 3PM </br>
+                Ceremony </br>
+                Grand Estate- 4PM</br>
+                Reception</br>
+                Lenope - 11PM
+                Afters</br>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="homeRSVP">
+            <div class="pageContainer">
+                <div class="RSVPbutton">
+                    <h3>We would love to see you there</h3>
+                    <p>13th August 2022</p>
+                    <button>
+                        <a class="myButton" asp-area="" asp-controller="Home" asp-action="RSVP">Click here to RSVP</a>
+                    </button>
+                    <p>Please RSVP by this date</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
