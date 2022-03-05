@@ -54,96 +54,9 @@
             @RenderBody()
         </main>
     </div>
-
-    @*<script src="~/js/fullpage.js"></script>*@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
 
-    @*<script src="~/js/site.js" asp-append-version="true"></script>*@
-    @*<script>
-        new fullpage('#fullPage', {
-            ////Navigation
-            //navigation: true,
-            //navigationPosition: 'right',
-            navigationTooltips: ['firstSlide', 'secondSlide'],
-            //showActiveTooltip: true,
-            //slidesNavigation: true,
-            //slidesNavPosition: 'bottom',
-            responsiveWidth: 850,
-            responsiveHeight: 900,
-            anchors: ['home', 'grandEstate', 'weddingSchedule', 'homeRSVP'],
-
-            ////Scrolling
-
-            ////Accessibility
-            keyboardScrolling: true,
-            //animateAnchor: false,
-            recordHistory: true,
-
-            ////Design
-            controlArrows: false,
-            controlArrowColor: '#bd9b16',
-            //verticalCentered: true,
-            //responsiveSlides: true,
-
-            ////Custom selectors
-            lazyLoading: true
-        });
-
-                //fullpage('#AccomodationPage', {
-                //    ////Navigation
-                //    //navigation: true,
-                //    //navigationPosition: 'right',
-                //    //navigationTooltips: ['firstSlide', 'secondSlide'],
-                //    //showActiveTooltip: true,
-                //    slidesNavigation: true,
-                //    //slidesNavPosition: 'bottom',
-                //    responsiveWidth: 850,
-                //    responsiveHeight: 900,
-
-                //    ////Scrolling
-
-                //    ////Accessibility
-                //    keyboardScrolling: true,
-                //    animateAnchor: false,
-                //    recordHistory: true,
-
-                //    ////Design
-                //    controlArrows: false,
-                //    controlArrowColor: '#bd9b16',
-                //    //verticalCentered: true,
-                //    //responsiveSlides: true,
-
-                //    ////Custom selectors
-                //    lazyLoading: true
-                //});
-                //fullpage('#TravelFullPage', {
-                //    ////Navigation
-                //    //navigation: true,
-                //    //navigationPosition: 'right',
-                //    //navigationTooltips: ['firstSlide', 'secondSlide'],
-                //    //showActiveTooltip: true,
-                //    slidesNavigation: true,
-                //    //slidesNavPosition: 'bottom',
-                //    responsiveWidth: 800,
-                //    responsiveHeight:900,
-
-                //    ////Scrolling
-
-                //    ////Accessibility
-                //    keyboardScrolling: true,
-                //    animateAnchor: false,
-                //    recordHistory: true,
-
-                //    ////Design
-                //    controlArrows: false,
-                //    controlArrowColor: '#bd9b16',
-                //    //verticalCentered: true,
-                //    //responsiveSlides: true,
-
-                //    ////Custom selectors
-                //    lazyLoading: true
-                //});
-    </script>*@
+    <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
