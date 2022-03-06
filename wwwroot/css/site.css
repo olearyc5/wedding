@@ -77,14 +77,32 @@ h1, h2 {
     text-align: center;
 }
 
-h2 {
-    font-size: 4.5em;
-    margin: 0;
-    padding: 2% 0;
+@media (max-width:700px) {
+    h2 {
+        font-size: 3.5em;
+        margin: 0;
+        padding: 2% 0;
+    }
 }
 
-h3 {
-    font-size: 35px;
+@media (min-width:700px) {
+    h2 {
+        font-size: 4.5em;
+        margin: 0;
+        padding: 2% 0;
+    }
+}
+
+@media (max-width:600px) {
+    h3 {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width:600px) {
+    h3 {
+        font-size: 2.5em;
+    }
 }
 
 @media (max-width:1200px) {
@@ -554,7 +572,17 @@ ul li {
     box-shadow: inset 0 0 0 1000px rgba(0,41,41,.45);
 }
 
-@media (max-width:1000px) {
+@media (max-width:600px) {
+    .welcomeTitle {
+        font-size: 4.5em;
+        font-weight: 500;
+        color: #d9dade;
+        margin: 0;
+    }
+}
+
+
+@media (min-width:600px) and (max-width:1000px) {
     .welcomeTitle {
         font-size: 6em;
         font-weight: 500;
@@ -753,46 +781,10 @@ ul li {
     float: left;
 }
 
-@media (max-width:500px) {
+@media (max-width:800px) {
     .google-maps-home {
         position: relative;
-        padding-bottom: 55% !important;
-        overflow: hidden;
-        margin-bottom: 0px;
-        border: 0;
-        width: 100%;
-        bottom: 25%;
-    }
-}
-
-@media (max-width:700px) {
-    .google-maps-home {
-        position: relative;
-        padding-bottom: 45% !important;
-        overflow: hidden;
-        margin-bottom: 0px;
-        border: 0;
-        width: 100%;
-        bottom: 15%;
-    }
-}
-
-@media (max-width:750px) {
-    .google-maps-home {
-        position: relative;
-        padding-bottom: 35% !important;
-        overflow: hidden;
-        margin-bottom: 0px;
-        border: 0;
-        width: 100%;
-        bottom: 12%;
-    }
-}
-
-@media (max-width:1000px) {
-    .google-maps-home {
-        position: relative;
-        padding-bottom: 20% !important;
+        padding-bottom: 50% !important;
         overflow: hidden;
         margin-bottom: 0px;
         border: 0;
@@ -801,7 +793,7 @@ ul li {
     }
 }
 
-@media (min-width:1000px) {
+@media (min-width:800px) {
     .google-maps-home {
         position: relative;
         padding-bottom: 34% !important;

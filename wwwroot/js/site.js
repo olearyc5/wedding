@@ -4,7 +4,7 @@
 
 var allowScroll = true;
 var menuOpen = false;
-Write your JavaScript code.
+//Write your JavaScript code.
 function toggleMobileMenu(menu) {
     menu.classList.toggle('open');
 
