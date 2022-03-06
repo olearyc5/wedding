@@ -96,12 +96,16 @@ h1, h2 {
 @media (max-width:600px) {
     h3 {
         font-size: 1.5em;
+        min-width: max-content;
+        margin: 1%;
     }
 }
 
 @media (min-width:600px) {
     h3 {
         font-size: 2.5em;
+        min-width: max-content;
+        margin: 1%;
     }
 }
 
@@ -512,14 +516,14 @@ ul li {
 #Pittsburgh {
     background: url('../img/IMGP2534 small.jpg') no-repeat center center;
     background-size: cover !important;
-    box-shadow: inset 0 0 0 1000px rgba(0,41,41,.75);
+    box-shadow: inset 0 0 0 1000px rgba(0,41,41,.8);
 }
 
 @media (max-width:800px) {
     #NewYork {
         background: url('../img/DSCN9308.jpg') no-repeat 30% 0%;
         background-size: cover !important;
-        box-shadow: inset 0 0 0 1000px rgba(0,41,41,.45);
+        box-shadow: inset 0 0 0 1000px rgba(0,41,41,.65);
     }
 }
 
@@ -527,14 +531,14 @@ ul li {
     #NewYork {
         background: url('../img/DSCN9308.jpg') no-repeat center center;
         background-size: cover !important;
-        box-shadow: inset 0 0 0 1000px rgba(0,41,41,.45);
+        box-shadow: inset 0 0 0 1000px rgba(0,41,41,.65);
     }
 }
 
 #Philly {
     background: url('../img/IMGP2747.jpg') no-repeat center center;
     background-size: cover !important;
-    box-shadow: inset 0 0 0 1000px rgba(0,41,41,.55);
+    box-shadow: inset 0 0 0 1000px rgba(0,41,41,.65);
 }
 
 @media (max-width:800px) {
@@ -546,10 +550,11 @@ ul li {
 @media (min-width:800px) {
     #Johnstown {
         background: url('../img/Ogham Sandi Left.png'),url('../img/Ogham Sandi Left.png');
-        background-size: 215px;
+        background-size: 9em;
         background-position: 1% top,99% bottom;
         background-repeat: no-repeat, no-repeat;
         background-color: #2E76BE !important;
+        padding: 0 12%
     }
 }
 
@@ -557,7 +562,7 @@ ul li {
 #indy {
     background: url('../img/IMGP2878.jpg') no-repeat center center;
     background-size: cover !important;
-    box-shadow: inset 0 0 0 1000px rgba(0,41,41,.5);
+    box-shadow: inset 0 0 0 1000px rgba(0,41,41,.65);
 }
 
 #World {
@@ -569,7 +574,7 @@ ul li {
 #Europe {
     background: url('../img/Amsterdam.jpg') no-repeat center center;
     background-size: cover !important;
-    box-shadow: inset 0 0 0 1000px rgba(0,41,41,.45);
+    box-shadow: inset 0 0 0 1000px rgba(0,41,41,.65);
 }
 
 @media (max-width:600px) {
@@ -705,6 +710,16 @@ ul li {
     position: relative;
 }
 
+.travel {
+    min-height: 100vh;
+    height: 100%;
+    /*background-color: #FAECDB;*/
+    background-color: #002929;
+    padding: 1% 5%;
+    text-align: center;
+    position: relative;
+}
+
 .venue-home {
     display: inline-flex;
     text-align: center;
@@ -735,7 +750,6 @@ ul li {
         width: 96%;
         height: 90vh;
         font-size: 1em;
-        /*    border:dashed;*/
         padding: 0 2% 2% 2%;
         display: contents;
         position: relative;
@@ -748,28 +762,91 @@ ul li {
         width: 45%;
         height: 90%;
         font-size: 1.15em;
-        /*    border:dashed;*/
         padding: 2%;
     }
 }
 
-@media (min-width:1200px) {
+@media (min-width:1300px) {
     .venue-blurb {
         width: 45%;
         height: 70%;
         font-size: 1.35em;
-        /*    border:dashed;*/
         padding: 2%;
     }
 }
 
-@media (min-width:1400px) {
+@media (min-width:1500px) {
     .venue-blurb {
         width: 45%;
         height: 70%;
         font-size: 1.5em;
-        /*    border:dashed;*/
         padding: 2%;
+    }
+}
+
+@media (max-width:850px) {
+    .travelPage {
+        padding: 10% 0 2%;
+    }
+}
+
+@media (min-width:850px) and (max-width:1150px) {
+    .travelPage {
+        padding: 8% 0 2%;
+    }
+}
+
+@media (min-width:1150px) and (max-width:1400px) {
+    .travelPage {
+        padding: 6% 0 2%;
+    }
+}
+
+
+@media (min-width:1400px) {
+    .travelPage {
+        padding: 4% 0 2%;
+    }
+}
+
+
+
+@media (max-width:801px) {
+    .travel-blurb {
+        width: 96%;
+        height: 90vh;
+        font-size: 0.9em;
+        padding: 0 2% 2% 2%;
+        display: contents;
+        position: relative;
+    }
+}
+
+
+@media (min-width:801px) and (max-width:1000px) {
+    .travel-blurb {
+        width: 96%;
+        height: 90%;
+        font-size: 1em;
+        padding: 0 2% 2% 2%;
+    }
+}
+
+@media (min-width:1000px) and (max-width:1200px) {
+    .travel-blurb {
+        width: 96%;
+        height: 70%;
+        font-size: 1.1em;
+        padding: 0 2% 2% 2%;
+    }
+}
+
+@media (min-width:1200px) {
+    .travel-blurb {
+        width: 45%;
+        height: 70%;
+        font-size: 1.3em;
+        padding: 0 2% 2% 2%;
     }
 }
 
@@ -813,44 +890,19 @@ ul li {
     height: 100% !important;
 }
 
-@media (max-width:500px) {
+@media (max-width:1200px) {
     .google-maps-travel {
-        position: absolute;
-        padding-bottom: 15% !important;
+        position: relative;
+        padding-bottom: 50% !important;
         overflow: hidden;
         margin-bottom: 0px;
         border: 0;
-        width: 15%;
-        bottom: 2%;
-    }
-}
-
-@media (max-width:700px) {
-    .google-maps-travel {
-        position: absolute;
-        padding-bottom: 10% !important;
-        overflow: hidden;
-        margin-bottom: 0px;
-        border: 0;
-        width: 18%;
+        width: 100%;
         bottom: 3%;
     }
 }
 
-
-@media (max-width:1000px) {
-    .google-maps-travel {
-        position: absolute;
-        padding-bottom: 7% !important;
-        overflow: hidden;
-        margin-bottom: 0px;
-        border: 0;
-        width: 18%;
-        bottom: 3%;
-    }
-}
-
-@media (min-width:1000px) {
+@media (min-width:1200px) {
     .google-maps-travel {
         position: relative;
         padding-bottom: 34% !important;
