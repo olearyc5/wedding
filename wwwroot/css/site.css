@@ -198,6 +198,20 @@ button:after {
 
 /* Header settings for the site*/
 
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #002929;
+    border-bottom: solid 1px #bd9b16;
+}
+
+    /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .container {
+        padding-top: 102px;
+    }
+
 .header {
     width: 100%;
     display: flex;
@@ -255,7 +269,7 @@ button:after {
 @media (max-width:1000px) {
     .menu {
         font-size: 0.9em;
-        margin: 10px 4%;
+        padding: 10px 4%;
         display: inline-flex;
         justify-content: space-between;
         width: 92%;
@@ -267,7 +281,7 @@ button:after {
 @media (min-width:1000px) {
     .menu {
         font-size: 1em;
-        margin: 10px 10%;
+        padding: 10px 10%;
         display: inline-flex;
         justify-content: space-between;
         width: 80%;
@@ -279,7 +293,7 @@ button:after {
 @media (min-width:1200px) {
     .menu {
         font-size: 1em;
-        margin: 10px 12%;
+        padding: 10px 12%;
         display: inline-flex;
         justify-content: space-between;
         width: 76%;
@@ -383,6 +397,7 @@ ul li {
 .open .bar1 {
     -webkit-transform: rotate(-45deg) translate(-6px, 6px);
     transform: rotate(-45deg) translate(-6px, 6px);
+    z-index: 2;
 }
 
 .open .bar2 {
@@ -392,6 +407,7 @@ ul li {
 .open .bar3 {
     -webkit-transform: rotate(45deg) translate(-6px, -8px);
     transform: rotate(45deg) translate(-6px, -8px);
+    z-index: 2;
 }
 
 .open .mobile-menu {
@@ -751,7 +767,6 @@ ul li {
         height: 90vh;
         font-size: 1em;
         padding: 0 2% 2% 2%;
-        display: contents;
         position: relative;
     }
 }
@@ -778,6 +793,44 @@ ul li {
 @media (min-width:1500px) {
     .venue-blurb {
         width: 45%;
+        height: 70%;
+        font-size: 1.5em;
+        padding: 2%;
+    }
+}
+
+@media (max-width:801px) {
+    .accomod-blurb {
+        width: 96%;
+        height: 90vh;
+        font-size: 1em;
+        padding: 0 2% 2% 2%;
+        position: relative;
+    }
+}
+
+
+@media (min-width:801px) {
+    .accomod-blurb {
+        width: 55%;
+        height: 90%;
+        font-size: 1.15em;
+        padding: 2%;
+    }
+}
+
+@media (min-width:1300px) {
+    .accomod-blurb {
+        width: 55%;
+        height: 70%;
+        font-size: 1.35em;
+        padding: 2%;
+    }
+}
+
+@media (min-width:1500px) {
+    .accomod-blurb {
+        width: 60%;
         height: 70%;
         font-size: 1.5em;
         padding: 2%;
@@ -1267,7 +1320,8 @@ body {
 
 .accomod-img-left {
     float: left;
-    width: 47%;
+    width: 33%;
     height: 100%;
     margin: 0 2%;
+    padding: 1%;
 }
