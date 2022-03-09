@@ -79,35 +79,94 @@
         </div>
     </div>
     <div class="section">
-        <div class="travel" id="Europe">
-            <h2>Flying from Europe</h2>
-            <div class="travel-blurb" id="left">
-                <h3>Pittsburgh - Non-stop</h3>
-                <p>
-                    There are non-stop flights from two European airports to Pittsburgh - London(Heathrow) and Frankfurt
-                </p>
-                <h3>Pittsburgh - Layovers</h3>
-                <p>
-                    There are many one-stop flights to Pittsburgh from anywhere in Europe - with layovers in New York, Washington, Chicago, Charlotte, or Boston.
-                </p>
-            </div>
-            <div class="travel-blurb" id="right">
-                <h3>Non-stop Flight options - Other</h3>
-                <p>
-                    Otherwise, in order to avoid flights with a layover, the only option would be to fly into one of New York, Washington, Philadelphia, or Baltimore and travel from there.
-                </p>
-            </div>
-        </div>
-        <div class="travel" id="World">
-            <h2>Flying from Further Afield</h2>
-            <div class="travel-blurb" id="left">
-                <h3>From Australia</h3>
-                <p></p>
-            </div>
-            <div class="travel-blurb" id="right">
-                <h3>From Vancouver</h3>
-                <p></p>
-            </div>
+        <div class="flying" id="Europe">
+            <table class="flightTable">
+                <tr>
+                    <td colspan="2"><h2>Flying from Europe</h2></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Pittsburgh - Non-stop</h3>
+                    </td>
+                    <td>
+                        <h3>Non-stop Flight options - Other</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        There are non-stop flights from two European airports to Pittsburgh - London(Heathrow) and Frankfurt
+                    </td>
+                    <td>
+                        Otherwise, in order to avoid flights with a layover, the only option would be to fly into one of New York, Washington, Philadelphia, or Baltimore and travel from there.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Pittsburgh - Layovers</h3>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        There are many one-stop flights to Pittsburgh from anywhere in Europe - with layovers in New York, Washington, Chicago, Charlotte, or Boston.
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><h2>Flying from Australia</h2></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>From Australia</h3>
+                    </td>
+                    <td>
+                        <h3>From Vancouver</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        There are a few long-haul options from Australia to Pittsburgh. The route with the least amount of stops will take you into Pittsburgh airport via San Francisco or Dallas. Otherwise, it would be easier to fly into New York to reduce layover and travel time.
+                    </td>
+                    <td>
+                        There are no direct flights to Pittsburgh from Vancouver, but there are flights with layovers in Toronto, New York, Seattle, or Chicago. The alternative would be to fly to Indianapolis and drive from there.
+                    </td>
+                </tr>
+            </table>
+            @*<h2>Flying from Europe</h2>
+                <div class="flying-blurb" id="topleft">
+                    <h3>Pittsburgh - Non-stop</h3>
+                    <p>
+                        There are non-stop flights from two European airports to Pittsburgh - London(Heathrow) and Frankfurt
+                    </p>
+                    <h3>Pittsburgh - Layovers</h3>
+                    <p>
+                        There are many one-stop flights to Pittsburgh from anywhere in Europe - with layovers in New York, Washington, Chicago, Charlotte, or Boston.
+                    </p>
+                </div>
+                <div class="flying-blurb" id="topright">
+                    <h3>Non-stop Flight options - Other</h3>
+                    <p>
+                        Otherwise, in order to avoid flights with a layover, the only option would be to fly into one of New York, Washington, Philadelphia, or Baltimore and travel from there.
+                    </p>
+                </div>
+                <h2 style="display:flex;margin:auto;">Flying from Further Afield</h2>
+                <div class="flying-blurb" id="bottomleft">
+                    <h3>From Australia</h3>
+                    <p>
+                        There are a few long-haul options from Australia to Pittsburgh. The route with the least amount of stops will take you into Pittsburgh airport via San Francisco or Dallas.
+                    </p>
+                    <p>
+                        Otherwise, it would be easier to fly into New York to reduce layover and travel time.
+                    </p>
+                </div>
+                <div class="flying-blurb" id="bottomright">
+                    <h3>From Vancouver</h3>
+                    <p>
+                        There are no direct flights to Pittsburgh from Vancouver, but there are flights with layovers in Toronto, New York, Seattle, or Chicago. The alternative would be to fly to Indianapolis and drive from there.
+                    </p>
+                </div>*@
         </div>
     </div>
     <div class="section">
@@ -115,13 +174,24 @@
 
             <h2>Other Travel options</h2>
             <div class="travel-blurb" id="left">
-                Bus:
-                <a href="https://us.megabus.com/">Megabus</a>
-                Greyhound
+                <p> If you are travelling from another city into Pittsburgh, and not using a car - your best option is to use Megabus. This is the bus that both Sandi and Conor have used throughout their many transAtlantic trips. Megabus has several bus routes into Pittsburgh that are relatively frequent and affordable.</p>
+                <button>
+                    <a class="myButton" href="https://us.megabus.com/">Megabus</a>
+                </button>
+                <p>The alternative bus option, would be the Greyhound bus. It would be a cheaper option, but is much less comfortable, more infrequent, and less direct.</p>
+                <button>
+                    <a class="myButton" href="https://www.greyhound.com/en">Greyhound</a>
+                </button>
             </div>
             <div class="travel-blurb" id="right">
-                Train:
-                Amtrak
+                <h4>Amtrak</h4>
+                <p>The main reason why the bus is the best public transport option is because Amtrak has one train into Pittsburgh from New York a day, and it's much more expensive.</p>
+                <button>
+                    <a class="myButton" href="https://www.amtrak.com/home">Amtrak</a>
+                </button>
+                <div class="travel-img">
+                    <img src="~/img/Amtrak.jpg" />
+                </div>
             </div>
         </div>
     </div>

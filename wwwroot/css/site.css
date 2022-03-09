@@ -591,6 +591,22 @@ ul li {
     background: url('../img/Amsterdam.jpg') no-repeat center center;
     background-size: cover !important;
     box-shadow: inset 0 0 0 1000px rgba(0,41,41,.65);
+    height: 100vh;
+}
+
+.flightTable {
+    text-align: left;
+    margin: auto;
+    padding: 3% 0;
+    width: 90%;
+}
+
+.flightHeaders {
+    text-align: center;
+}
+
+td {
+    padding: 0.5rem;
 }
 
 @media (max-width:600px) {
@@ -743,6 +759,15 @@ ul li {
     padding: 2% 0;
 }
 
+.accomod-home {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 2% 0;
+    margin: auto;
+    font-size: 1.2em;
+}
+
 @media (max-width:801px) {
     .venue-img {
         margin: 0 12%;
@@ -757,6 +782,23 @@ ul li {
         height: 65vh;
         float: left;
         padding-bottom: 1%;
+        display: flex;
+    }
+}
+
+@media (max-width:801px) {
+    .travel-img {
+        margin: 0 12%;
+        text-align: center;
+        position: relative;
+    }
+}
+
+@media (min-width:801px) {
+    .travel-img {
+        height: 40%;
+        float: left;
+        padding: 2% 0;
         display: flex;
     }
 }
@@ -903,12 +945,71 @@ ul li {
     }
 }
 
+@media (max-width:801px) {
+    .flying-blurb {
+        width: 96%;
+        height: 45vh;
+        font-size: 0.9em;
+        padding: 0 2% 2% 2%;
+        display: contents;
+        position: relative;
+    }
+}
+
+
+@media (min-width:801px) and (max-width:1000px) {
+    .flying-blurb {
+        width: 96%;
+        height: 45%;
+        font-size: 1em;
+        padding: 0 2% 2% 2%;
+    }
+}
+
+@media (min-width:1000px) and (max-width:1200px) {
+    .flying-blurb {
+        width: 96%;
+        height: 35%;
+        font-size: 1.1em;
+        padding: 0 2% 2% 2%;
+    }
+}
+
+@media (min-width:1200px) {
+    .flying-blurb {
+        width: 45%;
+        height: 35%;
+        font-size: 1.3em;
+        padding: 0 2% 2% 2%;
+    }
+}
+
 #right {
     float: right;
 }
 
 #left {
     float: left;
+}
+
+#topright {
+    float: right;
+    position: absolute;
+}
+
+#topleft {
+    float: left;
+    top: 2%;
+}
+
+#bottomright {
+    float: right;
+    bottom: 1%;
+}
+
+#bottomleft {
+    float: left;
+    bottom: 1%;
 }
 
 @media (max-width:800px) {
