@@ -15,7 +15,7 @@ for details on configuring this project to bundle and minify static web assets. 
 
 @font-face {
     font-family: Raleway;
-    src: url(../font/Raleway-Regular.ttf);
+    src: url(../font/Raleway-SemiBold.ttf);
 }
 
 @font-face {
@@ -1374,7 +1374,7 @@ body {
 
 @media (min-width:800px) {
     #Registry {
-        background: url('../img/Ogham Sandi Left.png'),url('../img/Ogham Sandi Left.png');
+        background: url('../img/Ogham Sandi Left.png'),url('../img/Ogham Conor Right.png');
         background-size: 215px;
         background-position: 1% top,99% bottom;
         background-repeat: no-repeat, no-repeat;
@@ -1402,8 +1402,37 @@ body {
 
 .Accomodationhome {
     /*background-color: #FAECDB;*/
+    background-color: #2E76BE;
+    height: 100%;
+}
+
+.Accomodationhotels {
     background-color: #002929;
     height: 100%;
+}
+
+@media (min-width:800px) {
+    #hotelleft {
+        background: url('../img/Ogham Sandi Left.png');
+        background-size: 7.5em;
+        background-position: 1% top;
+        background-repeat: no-repeat;
+        padding: 0 12%;
+        height: 100%;
+        background-color: #002929;
+    }
+}
+
+@media (min-width:800px) {
+    #hotelright {
+        background: url('../img/Ogham Conor Right.png');
+        background-size: 7.5em;
+        background-position: 99% bottom;
+        background-repeat: no-repeat;
+        padding: 0 12%;
+        height: 100%;
+        background-color: #002929;
+    }
 }
 
 .TravelFullPage {
